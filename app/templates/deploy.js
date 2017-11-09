@@ -1,7 +1,6 @@
 const qiniu = require('qiniu')
-const path = require('path')
 const dir = require('node-dir')
-const resolveApp = require('./paths')
+const { resolve } = require('webpack-fn')
 
 const {
   npm_package_name: NAME,
@@ -10,7 +9,7 @@ const {
   npm_package_deploy_SECRET_KEY: SECRET_KEY,
 } = process.env
 
-const BASE = resolveApp('dist')
+const BASE = resolve('dist')
 const BUCKET = 'dada-fe'
 
 qiniu.conf.ACCESS_KEY = ACCESS_KEY
