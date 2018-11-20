@@ -1,4 +1,6 @@
-# generator-react-impression has been moved into [generator](https://github.com/NewDadaFE/generator)
+已废弃，迁移到[generator](https://github.com/NewDadaFE/generator)
+
+# generator-react-impression
 
 > React + Redux + React Router + React Impression + Webpack 3
 
